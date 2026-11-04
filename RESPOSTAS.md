@@ -28,11 +28,11 @@ b) O sistema deve aplicar primeiro a multiplicação e depois o bônus (acumula 
 ## Desafio 5 — revisão de código
 
 | Erro | Função | O que estava errado | Como o GHC avisou (resumo da mensagem) | Como corrigimos |
-| 1 | aplicaRegraDuasVezes | A assinatura dizia Int -> Int -> Int, mas o primeiro argumento é uma função. Faltaram os parênteses.
 
-|Erro de tipo: regra é tratado como Int, mas é aplicado a um argumento ("applied to one value argument, but its type Int has none").|Assinatura (Int -> Int) -> Int -> Int.
+| 1 | aplicaRegraDuasVezes | A assinatura dizia Int -> Int -> Int, mas o primeiro argumento é uma função. Faltaram os parênteses. |Erro de tipo: regra é tratado como Int, mas é aplicado a um argumento ("applied to one value argument, but its type Int has none").|Assinatura (Int -> Int) -> Int -> Int.
 
 | 2 | fimDeSemana |A lambda usava => no lugar de ->. | parse error on input '=>'. | \p -> p * 4.
+
 | 3 | natal | campanhaBonus precisa do valor do bônus. Sem ele, natal ficou com o tipo da fábrica e não com o da regra. | Tipo esperado Int -> Int, mas o real era Int -> Int -> Int.| natal = campanhaBonus 300.
 
 | 4 | promocaoAtual | pontosEmDobro 100 já é o resultado (um Int), mas a assinatura pede uma função. | Tipo esperado Int -> Int, mas o real era Int.| promocaoAtual = pontosEmDobro, sem o 100.
