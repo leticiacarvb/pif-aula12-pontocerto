@@ -3,7 +3,9 @@
 ## Dupla
 
 | Papel | Nome completo | Usuário do GitHub |
+
 | Leticia Carvalho(dono do fork) | leticiacarvb
+
 | Suri Savitri(colaborador) | SuriSavitri
 
 ## Explicação da solução
@@ -45,35 +47,65 @@ Criação de regras: em Haskell dá para criar a regra na hora com lambda (\p ->
 ## Evidência de execução
 
 Saída do `main` de `fidelidade.hs`:
+
 --- Desafio 1 ---
+
 120
+
 240
+
 170
+
 240
+
 --- Desafio 2 ---
+
 80
+
 160
+
 130
+
 240
+
 170
+
 --- Desafio 3 ---
+
 750
+
 350
+
 100
+
 55
+
 --- Desafio 4 ---
+
 950
+
 1750
+
 280
 
+
 Saída do `main` de `revisao.hs` (depois de corrigido):
+
 40
+
 100
+
 400
+
 200
 
-Saída de `pontocerto.c`:160
+Saída de `pontocerto.c`:
+
+160
+
 130
+
 250
+
 300
 
